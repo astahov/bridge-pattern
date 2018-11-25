@@ -1,5 +1,7 @@
 <?php
 
+namespace MyBridgePattern\Model;
+
 class Foo
 {
     public function doFoo()
