@@ -1,0 +1,19 @@
+version: '3'
+services:
+  rtms:
+    hostname: my--bridge-pattern
+    container_name: my--bridge-pattern
+    image: docker-php72:latest
+    volumes:
+      - .:/var/www:cached
+    ports:
+      - 80
+    dns:
+      - 10.128.232.2
+    environment:
+      - VIRTUAL_HOST=rtms.dyninno.test
+      - FLUENT_LOGGER_HOST=10.128.128.254
+networks:
+  default:
+    external:
+      name: dyninno.test
