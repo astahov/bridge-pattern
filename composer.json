@@ -3,5 +3,8 @@
     "psr-4": {
       "MyBridgePattern\\": "app/MyBridgePattern"
     }
+  },
+  "require": {
+    "php": "^7.2"
   }
 }
